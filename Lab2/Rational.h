@@ -16,6 +16,7 @@ public:
     Rational& operator=(const Rational& other);
 
 	Rational operator+(const Rational& other);
+	Rational operator+(int i);
 	Rational operator+=(const Rational& other);
 	
 	Rational operator-(const Rational& other);
@@ -36,3 +37,4 @@ private:
 };
 
 std::ostream& operator<<(std::ostream& os, const Rational r);
+// Rational operator+(Rational& r, int i);

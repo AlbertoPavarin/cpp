@@ -2,6 +2,7 @@
 #include <iostream>
 
 int main() {
+	int i = 2;
 	Rational r1 = Rational(1, 2);
 	Rational r2 = Rational(3, 2);
 	r1 = r1 + r2;
@@ -22,5 +23,10 @@ int main() {
 
     std::cout << "R5 > R4: " << (r5 > r4) << "\n";
     std::cout << "R5 < R4: " << (r5 < r4) << "\n";
+
+	std::cout << "R6: " << r6;
+	r6 = r6 + i;
+	std::cout << "R6 trap: " << r6;
+
 	return 0;
 }

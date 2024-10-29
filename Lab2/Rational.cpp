@@ -20,9 +20,12 @@ Rational& Rational::operator=(const Rational& other){
 	return *this;
 }
 
-
 Rational Rational::operator+(const Rational& other){
 	return Rational((num*other.den + den*other.num), den*other.den);
+}
+
+Rational Rational::operator+(int i){
+	return Rational((num + den * i), den);
 }
 
 Rational Rational::operator-(const Rational& other){
@@ -86,3 +89,7 @@ std::ostream& operator<<(std::ostream& os, Rational r)
 {
 	return os << r.getNum() << "/" << r.getDen() << '\n';
 }
+
+// Rational operator+(Rational& r, int i){
+// 	return Rational(r.getNum() + r.getDen() * i, r.getDen());
+// }
