@@ -19,16 +19,11 @@ class MyVector
 };
 
 MyVector::MyVector(int size): sz (size){
-	if (strcmp(typeid(size).name(), "i") == 0)
-	{
-		overw = false;
-		sz = size;
-		occupied = 0;
-		v = new double[size];
-		if (v == nullptr)
-			throw Invalid();
-	}
-	else
+	overw = false;
+	sz = size;
+	occupied = 0;
+	v = new double[size];
+	if (v == nullptr)
 		throw Invalid();
 }
 
