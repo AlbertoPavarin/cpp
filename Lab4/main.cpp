@@ -27,8 +27,6 @@ int main()
 	for (int i = 0; i < v2.size(); i++)
 		std::cout << "[" << i << "]: " << v2[i] << "\n";
 	v2 = v;
-	// MyVector v3 = v2;
-	// std::cout << "\n";
 	for (int i = 0; i < v2.size(); i++)
 		std::cout << "2[" << i << "]: " << v2[i] << "\n";
 	
@@ -36,10 +34,10 @@ int main()
 	std::cout << "\n";
 
 	for (int i = 0; i < v2.size(); i++)
-		std::cout << "1[" << i << "]: " << v2[i] << "\n";
+		std::cout << "[" << i << "]: " << v2[i] << "\n";
 	std::cout << "\n";
 
 	for (int i = 0; i < v.size(); i++)
-		std::cout << "2[" << i << "]: " << v[i] << "\n";
+		std::cout << "[" << i << "]: " << v[i] << "\n";
 	return 0;	
 }

@@ -9,7 +9,7 @@ class MyVector
 	int occupied;
 	double *v;
 public:
-		MyVector(int size);
+		MyVector(int size = 0);
 		MyVector(std::initializer_list<double> lst);
 		MyVector(const MyVector& v2);
 		int size() const;
