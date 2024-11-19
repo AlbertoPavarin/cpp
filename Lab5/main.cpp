@@ -14,30 +14,21 @@ int main()
 	for (int i = 0; i < v.size(); i++)
 		std::cout << "[" << i << "]: " << v[i] << "\n";
 
-	v.pop_back();
+	v.push_back(101);
 		
-	v.reserve(10);
+	// v.reserve(10);
 	std::cout << "\n";
 	for (int i = 0; i < v.size(); i++)
 		std::cout << "[" << i << "]: " << v[i] << "\n";
 
-	MyVector<double> v2 = {1, 2, 3, 4};
-	std::cout << "\n";
-	v2.push_back(1);
+	std::cout << "\n";		
+
+	MyVector<std::string> v2 = MyVector<std::string>(n);
+
 	for (int i = 0; i < v2.size(); i++)
-		std::cout << "[" << i << "]: " << v2[i] << "\n";
-	v2 = v;
-	for (int i = 0; i < v2.size(); i++)
-		std::cout << "2[" << i << "]: " << v2[i] << "\n";
-	
-	v2.pop_back();
-	std::cout << "\n";
+		v2[i] = "apapapa";
 
 	for (int i = 0; i < v2.size(); i++)
 		std::cout << "[" << i << "]: " << v2[i] << "\n";
-	std::cout << "\n";
-
-	for (int i = 0; i < v.size(); i++)
-		std::cout << "[" << i << "]: " << v[i] << "\n";
 	return 0;	
 }

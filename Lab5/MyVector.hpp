@@ -5,14 +5,14 @@ template<typename T> MyVector<T>::MyVector(int size): sz (size){
 	overw = false;
 	sz = size;
 	occupied = size;
-	v = new double[size];
-	for (int i = 0; i < size; i++) v[i] = 0;
+	v = new T[size];
+	for (int i = 0; i < size; i++) v[i] = T();
 	if (v == nullptr)
 		throw Invalid();
 }
 
 template<typename T> MyVector<T>::MyVector(const MyVector<T>& v2){
-	double *tmp = new double[v2.sz];
+	T *tmp = new T[v2.sz];
 	std::copy(v2.v, v2.v+sz, tmp);
 	delete[] v;
 	v = tmp;
@@ -21,7 +21,7 @@ template<typename T> MyVector<T>::MyVector(const MyVector<T>& v2){
 	overw = v2.overw;
 }
 
-template<typename T> MyVector<T>::MyVector(std::initializer_list<T> lst): sz{static_cast<int>(lst.size())}, v{new double[sz]} {
+template<typename T> MyVector<T>::MyVector(std::initializer_list<T> lst): sz{static_cast<int>(lst.size())}, v{new T[sz]} {
 	std::copy(lst.begin(), lst.end(), v);
 	occupied = sz;
 }
@@ -41,7 +41,7 @@ template<typename T> int MyVector<T>::size() const
 
 template<typename T> void MyVector<T>::resize(int size){
 	overw = true;
-	double *tmp = new double[size];
+	T *tmp = new T[size];
 	sz = size; 
 	for (int i = 0; i < occupied; i++)
 	{
@@ -51,12 +51,16 @@ template<typename T> void MyVector<T>::resize(int size){
 	v = tmp;
 }
 
-template<typename T> T& MyVector<T>::operator[](int i) const {
+template<typename T> T& MyVector<T>::operator[](int i) {
+	return v[i];
+}
+
+template<typename T> T MyVector<T>::operator[](int i) const {
 	return v[i];
 }
 
 template<typename T> MyVector<T>& MyVector<T>::operator=(const MyVector& v2) {
-	double *tmp = new double[v2.sz];
+	T *tmp = new T[v2.sz];
 	std::copy(v2.v, v2.v+sz, tmp);
 	delete[] v;
 	v = tmp;

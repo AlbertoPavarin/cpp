@@ -18,7 +18,8 @@ public:
 		MyVector(const MyVector& v2);
 		MyVector(MyVector&& v2);
 		int size() const;
-		T& operator[](int i) const;
+		T& operator[](int i);
+		T operator[](int i) const;
 		MyVector& operator=(const MyVector& v2);
 		MyVector& operator=(MyVector&& v2);
 		T& at(int i) const;

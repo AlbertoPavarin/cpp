@@ -21,6 +21,12 @@ MyVector::MyVector(const MyVector& v2){
 	overw = v2.overw;
 }
 
+MyVector::MyVector(MyVector&& v2): sz{v2.sz}, v(v2.v){
+	v2.sz = 0;
+	v2.v = nullptr; 
+
+}
+
 MyVector::MyVector(std::initializer_list<double> lst): sz{static_cast<int>(lst.size())}, v{new double[sz]} {
 	std::copy(lst.begin(), lst.end(), v);
 	occupied = sz;
@@ -46,7 +52,11 @@ void MyVector::resize(int size){
 	v = tmp;
 }
 
-double& MyVector::operator[](int i) const {
+double& MyVector::operator[](int i) {
+	return v[i];
+}
+
+double MyVector::operator[](int i) const {
 	return v[i];
 }
 
@@ -58,6 +68,15 @@ MyVector& MyVector::operator=(const MyVector& v2) {
 	sz = v2.sz;
 	occupied = v2.occupied;
 	overw = v2.overw;
+	return *this;
+}
+
+MyVector& MyVector::operator=(MyVector&& v2) {
+	delete[] v;
+	v = v2.v;
+	sz = v2.sz;
+	v2.v = nullptr;
+	v2.v = 0;
 	return *this;
 }
 
