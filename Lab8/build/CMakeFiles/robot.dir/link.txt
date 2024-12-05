@@ -1,2 +1,2 @@
-/usr/bin/ar qc librobot.a CMakeFiles/robot.dir/src/Robot.cpp.o
-/usr/bin/ranlib librobot.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc librobot.a CMakeFiles/robot.dir/src/Robot.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib librobot.a

@@ -1,7 +1,7 @@
-/home/hulk/0/ap2101790/cpp/Lab8/build/CMakeFiles/maze.dir
-/home/hulk/0/ap2101790/cpp/Lab8/build/CMakeFiles/robot.dir
-/home/hulk/0/ap2101790/cpp/Lab8/build/CMakeFiles/random_robot.dir
-/home/hulk/0/ap2101790/cpp/Lab8/build/CMakeFiles/right_hand_rule.dir
-/home/hulk/0/ap2101790/cpp/Lab8/build/CMakeFiles/main.dir
-/home/hulk/0/ap2101790/cpp/Lab8/build/CMakeFiles/edit_cache.dir
-/home/hulk/0/ap2101790/cpp/Lab8/build/CMakeFiles/rebuild_cache.dir
+/Users/erpavac/Desktop/Albi/Uni/2_anno/Laboratorio_Programmazione/cpp/Lab8/build/CMakeFiles/maze.dir
+/Users/erpavac/Desktop/Albi/Uni/2_anno/Laboratorio_Programmazione/cpp/Lab8/build/CMakeFiles/robot.dir
+/Users/erpavac/Desktop/Albi/Uni/2_anno/Laboratorio_Programmazione/cpp/Lab8/build/CMakeFiles/random_robot.dir
+/Users/erpavac/Desktop/Albi/Uni/2_anno/Laboratorio_Programmazione/cpp/Lab8/build/CMakeFiles/right_hand_rule.dir
+/Users/erpavac/Desktop/Albi/Uni/2_anno/Laboratorio_Programmazione/cpp/Lab8/build/CMakeFiles/main.dir
+/Users/erpavac/Desktop/Albi/Uni/2_anno/Laboratorio_Programmazione/cpp/Lab8/build/CMakeFiles/edit_cache.dir
+/Users/erpavac/Desktop/Albi/Uni/2_anno/Laboratorio_Programmazione/cpp/Lab8/build/CMakeFiles/rebuild_cache.dir

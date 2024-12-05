@@ -1,2 +1,2 @@
-/usr/bin/ar qc libright_hand_rule.a CMakeFiles/right_hand_rule.dir/src/RightHandRuleRobot.cpp.o
-/usr/bin/ranlib libright_hand_rule.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libright_hand_rule.a CMakeFiles/right_hand_rule.dir/src/RightHandRuleRobot.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libright_hand_rule.a

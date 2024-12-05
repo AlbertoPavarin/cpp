@@ -1,2 +1,2 @@
-/usr/bin/ar qc librandom_robot.a CMakeFiles/random_robot.dir/src/RandomRobot.cpp.o
-/usr/bin/ranlib librandom_robot.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc librandom_robot.a CMakeFiles/random_robot.dir/src/RandomRobot.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib librandom_robot.a
