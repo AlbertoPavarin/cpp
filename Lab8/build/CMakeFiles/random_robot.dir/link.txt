@@ -1,0 +1,2 @@
+/usr/bin/ar qc librandom_robot.a CMakeFiles/random_robot.dir/src/RandomRobot.cpp.o
+/usr/bin/ranlib librandom_robot.a
