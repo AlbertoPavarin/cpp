@@ -7,7 +7,7 @@
 
 class RightHandRuleRobot : Robot{
 	private:
-	
+		void initialSetup(int i, int j, Maze& maze, std::vector<std::tuple<int, int> > neighbours);
 	public:
 		RightHandRuleRobot(){}
 		void move(Maze& maze) override;

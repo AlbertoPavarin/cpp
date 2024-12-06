@@ -2,6 +2,8 @@
 #define MAZE_H
 #include <iostream>
 #include <string>
+#include <tuple>
+
 
 class Maze{
 	private:
@@ -17,9 +19,15 @@ class Maze{
 		Maze(std::string path);
 		void print() const;
 		bool finished() { return ((i_exit == i_robot) && (j_exit == j_robot)); }
-		void setIRobot();
-		void setJRobot();
-		void getNeighbours(); // get the 8 cells near the robot
+		void setRobot(int i, int j);
+		int getIRobot() const;
+		int getJRobot() const;
+		int getIExit() const;
+		int getJExit() const;
+		int getNRow() const { return N_ROW; }
+		int getNCol() const { return N_COLUMN; }
+		char getCell(int i, int j) const { return m[i][j]; }
+		std::vector<std::tuple<int, int> > getNeighbours() const; // get the 8 cells near the robot
 };
 
 #endif
