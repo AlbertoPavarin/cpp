@@ -18,13 +18,13 @@ int main(int argc, char *argv[]) {
 	std::cout << i << " " << j << "\n";
 	maze.print();
 	RightHandRuleRobot r = RightHandRuleRobot();
-	// while (!maze.finished()){
+	while (!maze.finished()){
 		r.move(maze);
 
 		std::cout << "\n";
 		maze.print();
-	// }
+	}
 
-
+	std::cout << "Uscita trovata\n";
 	return 0;
 }
